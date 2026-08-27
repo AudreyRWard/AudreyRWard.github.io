@@ -3,11 +3,10 @@ body {
 }
 
 .site-header {
-  background-color: #2c3e50;
-  padding: 40px 20px;
+  background-color: #008080;
+  padding: 5px 50px;
   width: 100%;
   box-sizing: border-box;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #header h1 {
@@ -18,11 +17,36 @@ body {
 }
 
 main {
-  padding: 40px;
+  padding: 5px 20px;
   font-family: "Times New Roman";
 }
 
 main p {
   font-size: 18px;
   color: green;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+
+}
+
+.content img {
+    width: 50%;
+    height: auto;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+  margin-top: 0;
+}
+
+.text-content p {
+  font-size: 18px;
+  line-height: 1.6;
 }

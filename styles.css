@@ -74,6 +74,7 @@ main p {
 }
 
 .box-content a {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,4 +88,28 @@ main p {
   width: auto;
   height: auto;
   object-fit: contain;
+  transition: filter 0.2s ease;
+}
+
+.box-content a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Times New Roman";
+  font-size: 24px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  max-width: 80%;
+  line-height: 1.2;
+}
+
+.box-content a:hover img {
+  filter: brightness(50%);
+}
+
+.box-content a:hover span {
+  opacity: 1;
 }
